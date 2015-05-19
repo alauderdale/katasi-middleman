@@ -1,0 +1,25 @@
+.card{
+	padding:$baseline;
+	background:white;
+	width:100%;
+	  @include breakpoint(md) {
+    margin-bottom:$baseline;
+  }
+	box-shadow:0 8px 0 #4A6593;
+	.pricing-text{
+		.dollar-sign{
+			font-size:1.4em;
+			font-family:$bold-font-name;
+			position:relative;
+			top:-20px;
+		}
+		.price{
+			font-size:5em;
+			font-family:$bold-font-name;
+		}
+		.transaction-unit{
+			position:relative;
+			left:-10px;
+		}
+	}
+}

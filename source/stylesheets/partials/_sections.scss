@@ -1,0 +1,18 @@
+//sections
+
+
+section{
+  padding:$baseline*2 0;
+  &.invert-section{
+    background-color:$primary-color;
+    h1,h2,h3,h4,h6,p,li,small{
+      color:white;
+    }
+  }
+  &.off-white{
+    background-color:#fafafa;
+  }
+}
+
+
+

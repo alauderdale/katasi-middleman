@@ -1,0 +1,43 @@
+.main-nav{
+	background:white;
+	padding:$baseline 0;
+	transition-duration:.4s;
+	.navbar-brand{
+		padding-top:0;
+		padding-bottom:0;
+	}
+	ul.navbar-nav{
+		li{
+			font-family:$bold-font-name;
+			text-transform:uppercase;
+			font-size:.8em;
+			letter-spacing:1.5px;
+			&.active{
+				a{
+					color:shade($light-gray-color,20%);
+					background:none!important;
+				}
+			}
+			a{
+				color:$light-gray-color;
+				transition-duration:.2s;
+				&:focus{
+					color:$light-gray-color;
+				}
+			}
+		}
+	}
+	.navbar-form{
+		border:none;
+	}
+	.btn{
+		padding:$baseline/2.5 $baseline;
+		font-size:.8em;
+		  @include breakpoint(md) {
+		    width:100%;
+		  }
+	}
+	&.small-nav{
+		padding:$baseline/8 0;	
+	}
+}

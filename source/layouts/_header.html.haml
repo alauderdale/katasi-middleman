@@ -1,0 +1,27 @@
+%nav.navbar.navbar-default.navbar-fixed-top.main-nav#main-nav
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/"} 
+        %img{:src=>"stylesheets/images/coopt_logo@2x.png", :width=>"116", :height=>"25px"}
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %form.navbar-form.navbar-right{:role => "search"}
+        .form-group
+          %a.btn.btn-primary{:href => "https://app.getcoopt.com/login"} 
+            Get started
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#section-link-features"} 
+            Features
+        %li
+          %a{:href => "#section-link-pricing"} 
+            Pricing
+        %li
+          %a{:href => "#section-link-faq"} 
+            FAQ

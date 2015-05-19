@@ -1,0 +1,13 @@
+footer{
+	&.main-footer{
+		.container{
+			border-top:1px solid rgba(255,255,255, .5);
+		}
+		img{
+			&.footer-logo{
+				position:relative;
+				left:10px;
+			}
+		}
+	}
+}

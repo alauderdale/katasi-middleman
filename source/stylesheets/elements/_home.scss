@@ -1,0 +1,42 @@
+.home-hero-sction{
+	@extend .invert-section;
+	background:$primary-color url("images/main_banner.png") no-repeat scroll center top;
+	background-size:cover;
+	.btn{
+		border:1px solid white;
+	}
+	.btn-default{
+		border-radius:100px;
+	}
+}
+
+.home-pricing-sction{
+	@extend .invert-section;
+	background:$primary-color url("images/macbook_banner.png") no-repeat scroll center top;
+	background-size:cover;
+}
+
+.home-quote-section{
+
+
+			blockquote{
+				margin-bottom:$baseline*2;
+			}
+
+
+}
+
+
+.macbook-img{
+	margin-bottom:-320px;
+
+  @include breakpoint(sm) {
+    display:none;
+  }
+}
+
+.howto-gif{
+  @include breakpoint(sm) {
+   	border:4px solid rgba(0,0,0,.2);
+  }
+}

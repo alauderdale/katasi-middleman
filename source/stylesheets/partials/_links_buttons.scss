@@ -1,0 +1,41 @@
+
+a{
+	color:$link-color;
+	
+}
+.btn{
+	border-radius:$base-border-radius;
+	border:none;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	font-family:$medium-font-name;
+	font-size:1em;
+	padding:$baseline/2 $baseline;
+	&.btn-primary{
+		background:$primary-color;
+	}
+	&.btn-info{
+		background:$secondary-color;
+	}
+	&.btn-default{
+		background:$tertiary-color;
+		color:white;
+	}
+}
+
+a.play-video-button{
+  background: white;
+  text-align: center;
+  padding: 12px 17px;
+  font-size: 2em;
+  color: black;
+  border-radius: 200px;
+  line-height: 26px;
+  margin-top:$baseline;
+  position:relative;
+  top:$baseline*1.5;
+  transition-duration:.5s;
+  &:hover{
+  	background-color:#f2f2f2;
+  }
+}
