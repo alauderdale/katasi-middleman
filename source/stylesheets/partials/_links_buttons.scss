@@ -1,41 +1,14 @@
-
-a{
-	color:$link-color;
-	
-}
 .btn{
-	border-radius:$base-border-radius;
-	border:none;
+	border-radius:100px;
 	text-transform:uppercase;
-	letter-spacing:1.5px;
-	font-family:$medium-font-name;
-	font-size:1em;
-	padding:$baseline/2 $baseline;
-	&.btn-primary{
-		background:$primary-color;
+	letter-spacing:2px;
+	font-family:$flourish-font-name;
+	font-weight:900;
+	&.btn-wire{
+		background:transparent;
+		border:1px solid rgba(255,255,255,.5);
+		&:hover{
+			border-color:rgba(255,255,255,1);
+		}
 	}
-	&.btn-info{
-		background:$secondary-color;
-	}
-	&.btn-default{
-		background:$tertiary-color;
-		color:white;
-	}
-}
-
-a.play-video-button{
-  background: white;
-  text-align: center;
-  padding: 12px 17px;
-  font-size: 2em;
-  color: black;
-  border-radius: 200px;
-  line-height: 26px;
-  margin-top:$baseline;
-  position:relative;
-  top:$baseline*1.5;
-  transition-duration:.5s;
-  &:hover{
-  	background-color:#f2f2f2;
-  }
 }

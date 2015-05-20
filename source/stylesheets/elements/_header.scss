@@ -1,34 +1,49 @@
 .main-nav{
-	background:white;
-	padding:$baseline 0;
 	transition-duration:.4s;
+	background-color:rgba(0,0,0,.15);
+	box-shadow:none;
+	border:none;
+	padding:$baseline/2 0;
 	.navbar-brand{
 		padding-top:0;
 		padding-bottom:0;
 	}
-	ul.navbar-nav{
+	.social-nav{
+		float: right;
+	}
+	.main-links{
+		float: right;
+	}
+	a{
+		&.navbar-brand{
+			position:relative;
+			top:12px;
+		}
+	}
+	.navbar-toggle{
+		border:none;
+		&:hover{
+			background-color:transparent;
+		}
+	}
+	ul.main-links{
+		padding:6px 0;
 		li{
-			font-family:$bold-font-name;
+			font-family:$flourish-font-name;
+			font-weight:900;
 			text-transform:uppercase;
 			font-size:.8em;
 			letter-spacing:1.5px;
-			&.active{
-				a{
-					color:shade($light-gray-color,20%);
-					background:none!important;
-				}
-			}
+			float: left;
 			a{
-				color:$light-gray-color;
 				transition-duration:.2s;
-				&:focus{
-					color:$light-gray-color;
+				color:white;
+				&:hover{
+					color:$primary-color;
+					background:none;
 				}
 			}
 		}
-	}
-	.navbar-form{
-		border:none;
 	}
 	.btn{
 		padding:$baseline/2.5 $baseline;
@@ -37,7 +52,29 @@
 		    width:100%;
 		  }
 	}
-	&.small-nav{
-		padding:$baseline/8 0;	
+	.btn-twitter{
+		background-color:#5EA9DD;
+		border-color:#5EA9DD;
+		padding:3px 11px;
+	}
+	.btn-facebook{
+		background-color:#3B5998;
+		border-color:#3B5998;
+		padding:3px 14px;
+
+	}
+	.btn-social{
+		font-family:$social-font-name;
+		font-size:1.5em;
+	}
+}
+
+//hide links to show dynamic menu
+
+.main-nav{
+	.nav-links{
+		@include breakpoint(md){
+			display:none;
+		}
 	}
 }

@@ -11,6 +11,9 @@
    @else if $point == xs {
      @media (max-width: 320px)  { @content ; }
   }
+   @else if $point == lg-and-up {
+     @media (min-width: 992px)  { @content ; }
+  }
 }
 
 // to use:

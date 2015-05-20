@@ -9,6 +9,7 @@
 @import "partials/responsive";
 
 //// public partials
+@import "partials/extends";
 @import "partials/grid";
 @import "partials/colors";
 @import "partials/base";
@@ -30,4 +31,5 @@
 @import "elements/header";
 @import "elements/footer";
 @import "elements/home";
+@import "elements/sliding_menu";
 

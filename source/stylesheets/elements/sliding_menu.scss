@@ -1,0 +1,150 @@
+body {
+    overflow-x: hidden
+}
+
+
+button.nav-toggler{
+    color:white;
+    font-size:2em;
+    position:relative;
+    top:15px;
+    background:none;
+    border:none;
+    box-shadow:none;
+    &:focus{
+        outline:none;
+    }
+}
+
+
+#wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* general style for all menus */
+nav.sliding-menu {
+    background:$black-color;
+    position: fixed;
+    z-index: 20;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding:20px 20px;
+    .nav-toggler {
+        float: right;
+    }
+    .navbar-form{
+        border:none;
+        box-shadow:none;
+        margin:0!important;
+        padding:0!important;
+        .form-group{
+            margin:0!important;
+            padding:0!important;
+            margin-left:10px!important;
+            &:nth-child(1){
+                margin-bottom: $baseline!important;
+                margin-top: -16px!important;
+            }
+            &:nth-child(2){
+                float: left;
+            }
+        }
+    }
+    .btn{
+        padding:$baseline/2.5 $baseline;
+        font-size:.8em;
+        margin-right:5px;
+    }
+    .btn-join-us{
+        padding:$baseline/2.5 $baseline*2;
+    }
+    .btn-twitter{
+        background-color:#5EA9DD;
+        border-color:#5EA9DD;
+        padding:3px 11px;
+    }
+    .btn-facebook{
+        background-color:#3B5998;
+        border-color:#3B5998;
+        padding:3px 14px;
+
+    }
+    .btn-social{
+        font-family:$social-font-name;
+        font-size:1.5em;
+    }
+    ul.main-links{
+        margin-top:$baseline;
+        li{
+            font-family:$flourish-font-name;
+            font-weight:900;
+            text-transform:uppercase;
+            font-size:.8em;
+            letter-spacing:1.5px;
+            a{
+                color:rgba(255,255,255,.5);
+                &:hover{
+                    background:none;
+                    color:white;
+                }
+            }
+        }
+    }
+
+}
+
+/* slide menu left and right, push menu left and right */
+
+nav.slide-menu-right {
+    top: 0;
+    width: 260px;
+    height: 100%;
+}
+
+
+nav.slide-menu-right{
+    right: -260px
+}
+
+body.smr-open nav.slide-menu-right {
+    right: 0
+}
+
+//hide menu on lg browser width
+
+@include breakpoint(lg-and-up) {
+
+    .mask , .sliding-menu{
+        display:none;
+    }
+
+}
+
+
+
