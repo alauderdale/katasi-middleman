@@ -7,7 +7,7 @@ button.nav-toggler{
     color:white;
     font-size:2em;
     position:relative;
-    top:10px;
+    top:8px;
     background:none;
     border:none;
     box-shadow:none;
@@ -69,7 +69,7 @@ nav.sliding-menu {
             margin-left:10px!important;
             &:nth-child(1){
                 margin-bottom: $baseline!important;
-                margin-top: -16px!important;
+                margin-top: -21px!important;
             }
             &:nth-child(2){
                 float: left;
@@ -108,6 +108,7 @@ nav.sliding-menu {
             font-size:.8em;
             letter-spacing:1.5px;
             a{
+                transition-duration:(.3s);
                 color:rgba(255,255,255,.5);
                 &:hover{
                     background:none;
