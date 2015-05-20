@@ -339,7 +339,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 h1, h2, h3, h4, h5, h6, p {
   margin:0;
-  margin-bottom:$baseline/2; 
+  margin-bottom:$baseline; 
 }
 
 
@@ -347,17 +347,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 p  {font-size: 1em; }
-h1 { font-size: 3.5em; }
+h1 { font-size: 2.3em; }
 h2 { font-size: 1.7em; }
-h3 { font-size: 1.2em; text-transform:uppercase;}
+h3 { font-size: 1.2em;}
 h4 { font-size: 1em; }
-h5 { font-size: 1em; letter-spacing:2pt; text-transform:uppercase;}
+h5 { font-size: 1em; }
 h6 { font-size: 0.8em;}
 
 
 
 h1{
-  font-family:$flourish-font-name-bold;
+  font-family:$flourish-font-name-light;
   text-transform:uppercase;
   letter-spacing:3pt;
 }
@@ -367,19 +367,26 @@ h2{
 }
 
 h3{
-  font-family:$bold-font-name;
-  text-transform:uppercase;
-  letter-spacing:3pt;
-  line-height:1.6em;
+  font-size:2em;
+  line-height:1.3em;
 }
 
-h5{
+h4{
   color: $body-text-color;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family:$flourish-font-name;
   letter-spacing:1px;
 }
+
+h5{
+  font-family:$bold-font-name;
+  text-transform:uppercase;
+  letter-spacing:3pt;
+  line-height:1.6em;
+}
+
+
 
 p{
   color:$body-text-color;

@@ -4,9 +4,21 @@
 	letter-spacing:2px;
 	font-family:$flourish-font-name;
 	font-weight:900;
+	padding:$baseline/2 $baseline*1.5;
+	font-size:.7em;
+	transition-duration:.3s;
+	&.btn-primary{
+		background-color:$primary-color;
+		border-color:$primary-color;
+		&:hover{
+			background-color:shade($primary-color,10%);
+			border-color:shade($primary-color,10%);		
+		}
+	}
 	&.btn-wire{
 		background:transparent;
 		border:1px solid rgba(255,255,255,.5);
+		color:white;
 		&:hover{
 			border-color:rgba(255,255,255,1);
 		}

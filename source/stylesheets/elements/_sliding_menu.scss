@@ -5,7 +5,7 @@ body {
 
 button.nav-toggler{
     color:white;
-    font-size:2em;
+    font-size:1.9em;
     position:relative;
     top:8px;
     background:none;
@@ -78,7 +78,7 @@ nav.sliding-menu {
     }
     .btn{
         padding:$baseline/2.5 $baseline;
-        font-size:.8em;
+        font-size:.7em;
         margin-right:5px;
     }
     .btn-join-us{
@@ -97,7 +97,8 @@ nav.sliding-menu {
     }
     .btn-social{
         font-family:$social-font-name;
-        font-size:1.5em;
+        font-size:1.4em;
+        color:white;
     }
     ul.main-links{
         margin-top:$baseline;

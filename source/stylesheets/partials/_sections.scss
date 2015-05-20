@@ -10,6 +10,10 @@ section{
   &.off-white{
     background-color:#fafafa;
   }
+  &.top-section{
+  	padding:$baseline*4 0;
+  	padding-top:$baseline*4 + 78px ;
+  }
 }
 
 
