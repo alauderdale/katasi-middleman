@@ -40,10 +40,10 @@ $(document).ready(function(){
 	 $(window).scroll(function(){
      var divOffset = $('.menu-change').offset();
      if(window.scrollY > divOffset.top ){
-        $('.main-nav').addClass('small-nav');
+        $('.main-nav').addClass('scrolled-nav');
      }
      if(window.scrollY < divOffset.top){
-        $('.main-nav').removeClass('small-nav');
+        $('.main-nav').removeClass('scrolled-nav');
      }
     });
 

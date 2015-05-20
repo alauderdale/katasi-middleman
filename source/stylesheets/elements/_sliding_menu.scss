@@ -87,12 +87,12 @@ nav.sliding-menu {
     .btn-twitter{
         background-color:#5EA9DD;
         border-color:#5EA9DD;
-        padding:3px 11px;
+        padding:3px 8px;
     }
     .btn-facebook{
         background-color:#3B5998;
         border-color:#3B5998;
-        padding:3px 14px;
+        padding:3px 13px;
 
     }
     .btn-social{
@@ -114,6 +114,9 @@ nav.sliding-menu {
                 &:hover{
                     background:none;
                     color:white;
+                }
+                &:focus{
+                    background:transparent;
                 }
             }
         }

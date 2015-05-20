@@ -1,0 +1,33 @@
+footer{
+	&.global-footer{
+		.logo-svg{
+			fill:$gray-color;
+		}	
+		h6{
+			color:$gray-color;
+		}
+		ul{
+			li{
+				a{
+					color:$light-gray-color;
+					transition-duration:.3s;
+					&:hover{
+						color:white;
+					}
+				}
+			}
+			&.footer-main-nav{
+				li{
+					font-size:.7em;
+					line-height:1.9em;
+				}
+			}
+			&.social-nav-footer{
+				li{
+					font-family:$social-font-name;
+					font-size:2em;
+				}
+			}
+		}
+	}
+}

@@ -352,7 +352,7 @@ h2 { font-size: 1.7em; }
 h3 { font-size: 1.2em;}
 h4 { font-size: 1em; }
 h5 { font-size: 1em; }
-h6 { font-size: 0.8em;}
+h6 { font-size: 0.8em; margin-bottom:$baseline/2;}
 
 
 
@@ -384,6 +384,13 @@ h5{
   text-transform:uppercase;
   letter-spacing:3pt;
   line-height:1.6em;
+}
+
+h6{
+  font-family:$bold-font-name;
+  text-transform:uppercase;
+  letter-spacing:1pt;
+  line-height:1.3em;
 }
 
 
