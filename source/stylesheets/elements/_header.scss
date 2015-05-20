@@ -4,6 +4,9 @@
 	box-shadow:none;
 	border:none;
 	padding:$baseline/2 0;
+	.logo-svg{
+		//to-do:changing menu
+	}
 	.navbar-brand{
 		padding-top:0;
 		padding-bottom:0;
@@ -25,6 +28,14 @@
 		&:hover{
 			background-color:transparent;
 		}
+	}
+	span.menu-text{
+		font-family:$flourish-font-name;
+		font-weight:900;
+		text-transform:uppercase;
+		font-size:13px;
+		margin-right:10px;
+		letter-spacing:1.5px;
 	}
 	ul.main-links{
 		padding:6px 0;
