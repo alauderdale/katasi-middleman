@@ -20,6 +20,7 @@ section{
       left:29px;
       opacity:.7;
       @include breakpoint(md) {
+        left:0;
         margin-bottom:$baseline/2;
       }
     }
