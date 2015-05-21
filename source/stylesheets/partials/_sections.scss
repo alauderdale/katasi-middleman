@@ -20,8 +20,13 @@ section{
       left:29px;
       opacity:.7;
       @include breakpoint(md) {
-        left:-10px;
         margin-bottom:$baseline/2;
+      }
+    }
+    .info-container{
+      padding-right:$baseline;
+      @include breakpoint(md) {
+        padding-right:0;
       }
     }
   }
