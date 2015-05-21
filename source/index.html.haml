@@ -3,39 +3,104 @@
 ;;;
 
 
-%section.invert-section.primary-bg.text-center.top-section.home-video
+%section.invert-section.text-center.top-section.home-video
 	.container
-		.col-lg-12
-			%h1
-				HITTING THE BRAKE ON TEXTING AND DRIVING
-			%p.lead
-				%em
-					Creating Focused Drivers by Eliminating the Distraction at the Source.
-			.padding-top
-				%a.btn.btn-primary{:href=>"#"}
-					Keep our Roads Safe
+		.row
+			.col-lg-12
+				%h1
+					HITTING THE BRAKE ON TEXTING AND DRIVING
+				%p.lead
+					%em
+						Creating Focused Drivers by Eliminating the Distraction at the Source.
+				.padding-top
+					%a.btn.btn-primary{:href=>"#"}
+						Keep our Roads Safe
+	%video{:autoplay => "autoplay", :loop => "loop"}
+		%source{:src => "http://taxify.co/wp-content/uploads/2014/06/file.mp4", :type => "video/mp4"}/
 %section.text-center.menu-change
 	.container
-		.col-md-2
-		.col-md-8
-			%h3
-				Don't just take our word for it
-			%p
-				Every year distracted driving causes 1.6 million auto accidents, half a million injuries and takes 6000 lives. Groove will has the solution to stop it all.
+		.row
+			.col-md-2
+			.col-md-8
+				%h3
+					Don't just take our word for it
+				%p
+					Every year distracted driving causes 1.6 million auto accidents, half a million injuries and takes 6000 lives. Groove will has the solution to stop it all.
 		.col-md-2
 %section.press-slider
 %section.text-center
 	.container
-		.col-md-2
-		.col-md-8
-			%h3
-				Technology that "Just Works"
-			%p
-				Plug the Groove module into your car, sync your phone and that's it. Groove algorithms know when you're driving and block distractions until you complete your trip.
-		.col-md-2
+		.row
+			.col-md-2
+			.col-md-8
+				%h3
+					Technology that "Just Works"
+				%p
+					Plug the Groove module into your car, sync your phone and that's it. Groove algorithms know when you're driving and block distractions until you complete your trip.
+			.col-md-2
+%section.no-padding-top.icon-grid-col-6
+	.container
+		.row
+			.col-md-6
+				.row.text-center-md
+					.col-md-3
+						%i.md.md-directions-car.icon-md.text-right{:style=>"color:#FBBB42;"}
+					.col-md-9
+						.padding-right
+							%h6
+								WORKS LIKE MAGIC
+							%p
+								%small
+									Groove has developed a system that knows who is in the vehicle, who is driving and whose distractions to block. We accommodate every scenario based on the drivers in the car.
+			.col-md-6
+				.row.text-center-md
+					.col-md-3
+						%i.md.md-phone-iphone.icon-md.text-right{:style=>"color:#191B1F;"}
+					.col-md-9
+						.padding-right
+							%h6
+								KEY PARTNERSHIPS
+							%p
+								%small
+									Our telecom partners have invested in network technologies to limit distractions on a mobile phone.  Our technology notifies their network that the subscriber is driving and turns off those distractions.
+		.row
+			.col-md-6
+				.row.text-center-md
+					.col-md-3
+						%i.md.md-thumb-up.icon-md.text-right{:style=>"color:#F63706;"}
+					.col-md-9
+						.padding-right
+							%h6
+								GOOD INTENTIONS
+							%p
+								%small
+									We believe that drivers recognize the danger of texting while driving, but the temptation is too great to stop. We provide tools that eliminate the temptation and help them focus on the road.
+			.col-md-6
+				.row.text-center-md
+					.col-md-3
+						%i.md.md-account-circle.icon-md.text-right{:style=>"color:#9ACA40;"}
+					.col-md-9
+						.padding-right
+							%h6
+								FOCUSED DRIVERS
+							%p
+								%small
+									Groove works on all phones without requiring downloaded software. After starting your drive, texts, posts and tweets are all blocked. After ending your drive, all messages are sent.  Groove just works.
+		%hr
+%section.text-center.no-padding-bottom.padding-top
+	.container
+		.row
+			.col-md-2
+			.col-md-8
+				%h3
+					Get your Groove on
+				%p
+					Change is easier when you get rewards. Groove Game partners with companies that reward you for safe driving.
+				%a.btn.btn-primary{:href=>"#"}
+					REQUEST AN INVITE
+				%img.double-padding-top.img-responsive.margin-auto{:src=>"images/groove_app_mock_1.png"}
 
-
-
+=partial"shared/sign_up_panel"
 
 
 

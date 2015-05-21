@@ -2,7 +2,23 @@ section{
 	&.home-video{
 		background:$black-color url("/images/home_bg_placeholder@2x.png") no-repeat scroll center top;
 		background-size:cover;
+		  position: relative;
+		  overflow-y: hidden;
+		  color: white;
 
+		video {
+		  position: absolute;
+		  min-height: 100%;
+		  min-width: 100%;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  z-index: 0;
+		}
+		.container{
+			z-index: 1;
+			position:inherit;
+		}
 	}
 	&.press-slider{
 		background-color:$off-white-bg-color;

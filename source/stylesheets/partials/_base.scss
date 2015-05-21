@@ -132,8 +132,4 @@ img{
 }
 
 
-.text-center-sm{
-  @include breakpoint(sm) {
-      text-align:center;
-    }
-}
+

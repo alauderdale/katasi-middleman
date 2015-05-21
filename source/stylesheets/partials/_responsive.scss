@@ -20,3 +20,39 @@
 //   @include breakpoint(md) {
 //     ...
 //   }
+
+
+///conditionsl classes
+
+//md
+
+.text-center-md{
+
+  @include breakpoint(md) {
+    text-align:center;
+  }
+
+}
+
+
+//sm
+
+
+.text-center-sm{
+  @include breakpoint(sm) {
+      text-align:center;
+    }
+}
+
+.no-margin-bottom-sm{
+  @include breakpoint(sm) {
+      margin-bottom:0;
+    }
+}
+
+.margin-bottom-sm{
+  margin-bottom:0;
+  @include breakpoint(sm) {
+      margin-bottom:24px;
+    }
+}

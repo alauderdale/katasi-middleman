@@ -14,6 +14,20 @@ section{
   	padding:$baseline*4 0;
   	padding-top:$baseline*4 + 78px ;
   }
+  &.icon-grid-col-6{
+    i{
+      position:relative;
+      left:29px;
+      opacity:.7;
+      @include breakpoint(md) {
+        left:-10px;
+        margin-bottom:$baseline/2;
+      }
+    }
+  }
+  &.sign-up-banner{
+    background:$primary-color url(../images/sign_up_banner_baner_bg.png) center;
+  }
 }
 
 
