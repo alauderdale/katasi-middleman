@@ -39,6 +39,10 @@ section{
   &.home-section{
     padding:$baseline*7 0;
     padding-top:$baseline*7 + 78px ;
+      @include breakpoint(md) {
+        padding:$baseline*2 0;
+        padding-top:$baseline*2 + 78px ;
+      }
   }
 }
 
