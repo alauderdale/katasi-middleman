@@ -1,0 +1,35 @@
+#jobs-accordion.panel-group{"aria-multiselectable" => "true", :role => "tablist"}
+  -6.times do |i| 
+    .panel.panel-default
+      .panel-heading{:role => "tab"}
+        .container
+          .col-lg-12
+            %a.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "false", "data-parent" => "#jobs-accordion", "data-toggle" => "collapse", :href => "#collapse-#{i}"}
+              %h4
+                Position Name
+              %p
+                %small
+                  Boulder, CO
+              .text-right.close-icon
+                +
+      .clearfix
+      .panel-collapse.collapse{ :role => "tabpanel", :id=>"collapse-#{i}"}
+        .panel-body
+          .container
+            .row
+              .col-md-8
+                %p
+                  Seeking full stack senior Java engineer who wants to be a super hero… someone who wants to save lives. At Katasi we write distracted driving software solutions. Team members will be responsible for tasks such as: writing “learning algorithms” to assess a driver’s behaviors, assess if a driver is in a car, design a gamification engine, write RESTful interfaces, and contribute to architecture and design of overall product in an agile environment.
+                -2.times do
+                  %p
+                    Now for the usual stuff…  The hard skills
+                  %ul
+                    -4.times do
+                      %li
+                        5+ years development experience or equivalent skill level
+
+              .col-md-4
+                %a.btn.btn-primary.pull-right{:href=>"#"}
+                  Apply by Email
+
+ 

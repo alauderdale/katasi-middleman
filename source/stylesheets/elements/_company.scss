@@ -1,0 +1,95 @@
+a.team-member-thumb{
+	margin-bottom:$baseline*2;
+	display:block;
+	p{
+		margin-bottom:0;
+	}
+	ul{
+		font-size:.8em;
+		margin-left:14px;
+		li{
+			color:$text-color;
+		}
+	}
+	img{
+		transition-duration:.2s;
+		opacity: 0.9;
+		max-width:300px;
+	}
+	&:hover, &:focus{
+		text-decoration:none;
+		img{
+			opacity:1;
+		}
+		li,p,img{
+			text-decoration:none;
+		}
+	}
+}
+
+//jobs accordian
+
+
+#jobs-accordion{
+	.panel{
+		background:transparent;
+		border:none;
+		border-bottom:1px solid $border-color;
+		border-radius:0px;
+		box-shadow:none;
+		padding:$baseline 0;
+		a{
+			&:hover,&:focus{
+				text-decoration:none;
+			}
+		}
+		.panel-heading{
+			background:transparent;
+			padding:0;
+			a{
+				padding:10px 15px;
+				display:block;
+				h4{
+					margin-bottom:$baseline/4;
+				}			
+				p{
+					margin-bottom:0;
+				}
+				.close-icon{
+					font-size:3em;
+					font-family:$light-font-name;
+					margin-bottom:-30px;
+					position:relative;
+					top:-50px;
+					float: right;
+					display:inline-table;
+					@include transform(rotate(45deg));
+					transition-duration:.3s;
+					color:$primary-color;
+				}
+				&.collapsed{
+					.close-icon{
+						@include transform(rotate(0deg));
+					}
+				}
+			}
+
+		}
+		.in{
+			.panel-body{
+				background:#fafafa;
+			}
+		}
+		.panel-body{
+			font-size:.9em;
+			border:none;
+			.btn{
+				font-size:1em;
+			}
+		}
+	}
+}
+
+
+
+

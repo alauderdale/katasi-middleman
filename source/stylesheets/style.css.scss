@@ -14,6 +14,7 @@
 @import "partials/colors";
 @import "partials/base";
 @import "partials/typography";
+@import "partials/lists";
 @import "partials/links_buttons";
 @import "partials/margin_padding_helpers";
 @import "partials/sections";
@@ -28,9 +29,16 @@
 @import "partials/icons";
 
 
+
 //// elements
 @import "elements/header";
 @import "elements/footer";
-@import "elements/home";
 @import "elements/sliding_menu";
+@import "elements/home";
+@import "elements/products";
+@import "elements/company";
+
+//responsive 
+
+@import "partials/responsive_helpers";
 

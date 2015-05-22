@@ -19,7 +19,7 @@ $(document).ready(function(){
 //smooth scroll
 
 	$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
+		  $('a[href*=#ss]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 
 	 $(window).scroll(function(){
-     var divOffset = $('.menu-change').offset();
+     var divOffset = $('section :first-of-type').offset();
      if(window.scrollY > divOffset.top ){
         $('.main-nav').addClass('scrolled-nav');
      }

@@ -1,0 +1,103 @@
+;;;
+"title": "products"
+;;;
+
+%section.header-section{:style=>"background:#FBB74A url(images/header_company.png) no-repeat scroll center top; "}
+	.container
+		.row
+			.col-md-1
+			.col-md-10
+				%h1
+					LEARN ABOUT OUR COMPANY
+				.row
+					.col-md-2
+					.col-md-8
+						%p.lead
+							%em
+								Curabitur vitae commodo ipsum. Maecenas non sapien auctor, gravida lectus quis, malesuada mi. Pellentesque accumsan rutrum odio, a scelerisque ligula pellentesque id. 
+					.col-md-2
+			.col-md-1
+%section.no-padding-bottom
+	.container
+		.row
+			.col-md-12.text-center
+				%ul.nav.nav-pills.list-centered
+					%li
+						%a{:href => "#sscompany"} 
+							Company
+					%li
+						%a{:href => "#ssteam"} 
+							Team
+					%li
+						%a{:href => "#ssjobs"} 
+							Careers
+%section.no-padding-bottom#sscompany
+	.container
+		.row
+			.col-md-2
+			.col-md-8.text-center
+				%h3
+					About Katasi
+				%p
+					Katasi is a Colorado based company founded in 2009 by former rocket scientist Scott Tibbits. The Katasi’s team holds a patented process for network based and vehicle motion triggered distracted driving solutions, and has developed the software that makes Groove possible.
+			.col-md-2
+		%hr
+%section#ssteam
+	.container
+		.row
+			.col-md-12.text-center
+				%h3
+					All Star Team
+		.row
+			-6.times do
+				.col-md-4.col-sm-6
+					%a.team-member-thumb{:href=>"#"}
+						.padded
+							%img.img-responsive.margin-bottom{:src=>"images/company_team_placeholder@2x.png"}
+							%p.extra-bold-font-name.no-margin-bottom
+								Scott Tibbits 
+								%span.extra-light-text-color
+									CEO
+							.divider-sm
+							%p
+								%small
+									Knows his Space.
+							%ul
+								%li
+									25 years entrepreneurial experience 
+								%li
+									CEO / Founder of Starsys Research
+								%li
+									Co-Founder: eSpace Center for Space Entrepreneurship
+								
+
+		%hr
+%section.no-padding-bottom#ssjobs
+	.container
+		.row
+			.col-md-6
+				%img.img-responsive.text-center.margin-auto.margin-bottom{:src=>"images/company_career_circles@2x.png", :width=>"355"}
+			.col-md-5
+				%h3
+					Stopping distracted driving is a team effort. Each member of our company plays an important role
+				%p
+					%small
+						Katasi is building products and we're hiring! At Katasi, we value flexible work schedules and work/life balance. We make our hours count, produce quality work during those hours, then go home and play hard. At Katasi, we don't bring our egos. We all have the same goal, after all -- to save lives through preventing distracted driving. We use our unique strengths to support each other to meet this goal.
+			.col-md-1
+		%hr
+%section#team
+	.container
+		.row
+			.col-md-12.text-center
+				%h3
+					Open Positions
+		.row
+			.col-lg-12
+=partial"company/jobs_panel"
+
+
+
+=partial"shared/sign_up_panel"
+		
+
+

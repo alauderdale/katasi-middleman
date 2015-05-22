@@ -1,4 +1,8 @@
 footer{
+	ul{
+		margin-left:0;
+		margin-bottom:0;
+	}
 	&.global-footer{
 		.logo-svg{
 			fill:$gray-color;

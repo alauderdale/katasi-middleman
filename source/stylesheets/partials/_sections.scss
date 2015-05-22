@@ -10,10 +10,6 @@ section{
   &.off-white{
     background-color:#fafafa;
   }
-  &.top-section{
-  	padding:$baseline*4 0;
-  	padding-top:$baseline*4 + 78px ;
-  }
   &.icon-grid-col-6{
     i{
       position:relative;
@@ -33,6 +29,16 @@ section{
   }
   &.sign-up-banner{
     background:$primary-color url(../images/sign_up_banner_baner_bg.png) center;
+  }
+  &.header-section{
+    @extend %white_text;
+    text-align:center;
+    padding-top:$baseline*2 + 78;
+    background-size:cover!important;
+  }
+  &.home-section{
+    padding:$baseline*4 0;
+    padding-top:$baseline*4 + 78px ;
   }
 }
 

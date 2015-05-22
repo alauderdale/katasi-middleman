@@ -1,0 +1,18 @@
+ul.nav-pills{
+	li{
+		text-transform:uppercase;
+		font-family:$flourish-font-name-bold;
+		letter-spacing:1pt;
+		a{
+			color:$primary-color;
+			transition-duration:.2s;
+			&:hover{
+				background:none;
+				color:$light-gray-color;
+			}
+			&:focus{
+				background:none;
+			}
+		}
+	}
+}

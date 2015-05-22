@@ -33,6 +33,11 @@ body{
   background-color:white;
 }
 
+hr {
+  border-color:$border-color;
+
+}
+
 
 // Clearing
 
@@ -118,6 +123,15 @@ img{
   margin:$baseline auto;
 }
 
+.divider-sm{
+  width:60px;
+  height:3px;
+  background-color:$yellow-color;
+  display:inline-block;
+  text-align:center;
+  margin:$baseline/2 auto;
+}
+
 //icons
 
 .icon-circle{
@@ -130,6 +144,8 @@ img{
       margin-bottom:$baseline/2;
     }
 }
+
+
 
 
 
