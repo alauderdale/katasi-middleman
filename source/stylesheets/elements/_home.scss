@@ -1,7 +1,7 @@
 section{
 	&.home-video{
-		// background:$black-color url("/images/home_bg_placeholder@2x.png") no-repeat scroll center top;
-		background-color:$black-color;
+		background:$black-color url("/images/home_bg_placeholder@2x.png") no-repeat scroll center top;
+		// background-color:$black-color;
 		background-size:cover;
 		  position: relative;
 		  overflow-y: hidden;
@@ -10,7 +10,7 @@ section{
 
 		video {
 		  position: absolute;
-		  opacity:.7;
+		  // opacity:.7;
 		  min-height: 100%;
 		  min-width: 100%;
 		  left: 0;
