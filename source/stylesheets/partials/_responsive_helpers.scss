@@ -18,6 +18,14 @@
 
 }
 
+.btn-block-md{
+    @include breakpoint(md) {
+      display:block;
+      float: none;
+      width: 100%;
+    }
+}
+
 .no-padding-right-md{
 
   @include breakpoint(md) {

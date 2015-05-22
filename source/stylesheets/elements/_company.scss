@@ -31,13 +31,14 @@ a.team-member-thumb{
 
 
 #jobs-accordion{
+	margin-bottom:$baseline*3;
 	.panel{
 		background:transparent;
 		border:none;
-		border-bottom:1px solid $border-color;
 		border-radius:0px;
 		box-shadow:none;
-		padding:$baseline 0;
+		padding: 0;
+		margin:0;
 		a{
 			&:hover,&:focus{
 				text-decoration:none;
@@ -47,8 +48,19 @@ a.team-member-thumb{
 			background:transparent;
 			padding:0;
 			a{
-				padding:10px 15px;
 				display:block;
+				padding:$baseline 0;
+				padding-top:0;
+				&:focus{
+					border:none;
+					outline:none;
+				}
+				hr{
+					margin:0;
+					margin-bottom:$baseline;
+					visibility:hidden;
+					transition-duration:.3s;
+				}
 				h4{
 					margin-bottom:$baseline/4;
 				}			
@@ -71,20 +83,31 @@ a.team-member-thumb{
 					.close-icon{
 						@include transform(rotate(0deg));
 					}
+					hr{
+						visibility:visible;
+					}
 				}
 			}
 
 		}
 		.in{
 			.panel-body{
-				background:#fafafa;
+				background:$off-white-bg-color;
 			}
 		}
 		.panel-body{
+			padding:$baseline*2 0;
+			padding-top:$baseline*2 + 111px;
+			margin-top:-111px;
 			font-size:.9em;
 			border:none;
+			transition-duration:.3s;
 			.btn{
 				font-size:1em;
+				 @include breakpoint(md) {
+				 	position:relative;
+				 	top:-$baseline;
+				 }
 			}
 		}
 	}
