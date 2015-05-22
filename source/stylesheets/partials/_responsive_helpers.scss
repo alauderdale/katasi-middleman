@@ -21,7 +21,6 @@
 .btn-block-md{
     @include breakpoint(md) {
       display:block;
-      float: none;
       width: 100%;
     }
 }
