@@ -45,6 +45,10 @@ button.nav-toggler{
 
 /* general style for all menus */
 nav.sliding-menu {
+    ul{
+        margin:0;
+        padding:0;
+    }
     background:$black-color;
     position: fixed;
     z-index: 20;
