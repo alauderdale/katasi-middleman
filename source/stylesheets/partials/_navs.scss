@@ -18,3 +18,17 @@ ul.nav-pills{
 		}
 	}
 }
+
+ul.pager{
+	li{
+		a{
+			text-transform:uppercase;
+			letter-spacing:2px;
+			font-family:$flourish-font-name;
+			font-weight:900;
+			font-size:.8em;
+			padding:$baseline/2 $baseline*1.5;
+			border-radius:300px;
+		}
+	}
+}

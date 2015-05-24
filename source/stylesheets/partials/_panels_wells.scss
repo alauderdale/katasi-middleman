@@ -1,0 +1,20 @@
+.card{
+	background:white;
+	box-shadow:0 2px 10px 0 rgba(0,0,0,.10);
+	padding:$baseline*2;
+	&.card-press{
+		p{
+			font-family:$bold-font-name;
+			color:$text-color;
+		}
+		h6{
+			margin-top:10px;
+		}
+		margin-bottom:$baseline;
+		@include breakpoint(md) {
+		.btn{
+			padding:10px 12px;
+		}
+		}
+	}
+}

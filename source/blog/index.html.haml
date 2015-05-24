@@ -1,0 +1,59 @@
+;;;
+"title": "blog"
+;;;
+
+%section.header-section{:style=>"background:#2FA8DD url(images/header_blog@2x.png) no-repeat scroll center top; "}
+	.container
+		.row
+			.col-md-1
+			.col-md-10
+				%h1
+					STOPPING DISTRACTED DRIVING, ONE POST AT A TIME.
+				.row
+					.col-md-2
+					.col-md-8
+						%p.lead
+							%em
+								Recommended to read while stationary.
+					.col-md-2
+			.col-md-1
+%section.blog.blog-index
+	.container
+		.row
+			.col-md-12
+				-5.times do
+					.post-thumb
+						.row.padding-top
+							.col-md-8
+								%h4
+									%a{:href=>"blog/single"}
+										Article Title
+								%h6.extra-light-text-color
+									posted on march 31, 2015 by john doe in ux
+								%p
+									Curabitur vitae commodo ipsum. Maecenas non sapien auctor, gravida lectus quis, malesuada mi. Pellentesque accumsan rutrum odio, a scelerisque ligula pellentesque id. Nam auctor purus eget diam blandit, in semper urna commodo. Sed nec luctus est....
+								%a.btn.btn-wire-primary.margin-bottom{:href=>"blog/single"}
+									•••
+							.col-md-1
+							.col-md-3
+								%a{:href=>"blog/single"}
+									%img.img-responsive.margin-bottom.margin-top{:src=>"images/featured_img@2x.png", :width=>"169"}
+						%hr
+						
+	.container
+		.row
+			.col-md-12
+				%nav
+					%ul.pager
+						%li
+							%a{:href => "#"} 
+								%i.md.md-arrow-back
+								%span.margin-left
+								Older
+								
+						%li
+							%a{:href => "#"} 
+								Newer
+								%span.margin-right
+								%i.md-arrow-forward
+=partial"shared/sign_up_panel"

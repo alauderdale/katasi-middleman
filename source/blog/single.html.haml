@@ -1,0 +1,51 @@
+;;;
+"title": "blog"
+;;;
+
+:css
+	.main-nav{
+		background-color:rgba(0,0,0,.5);
+	}
+
+%section.single-header-section{:style=>"background: #0F3B4D url(/images/header_single.png) no-repeat scroll center top; "}
+	.title-wrapper
+		.container
+			.row
+				.col-lg-12
+					%h3
+						Article Title
+					%p
+						posted on march 31, 2015 by john doe in ux
+
+%section.blog.blog-single
+	.container
+		.row
+			.col-md-11.col-md-push-1
+				.row
+					.col-md-10
+						%p
+							%strong
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel condimentum elit. Suspendisse euismod dolor sed condimentum lacinia. Etiam ornare metus quis ante imperdiet vestibulum. Aliquam iaculis massa id diam elementum convallis. Maecenas sodales ac tortor et tristique. Curabitur vitae commodo ipsum. Maecenas non sapien auctor, gravida lectus quis, malesuada mi. Pellentesque accumsan rutrum odio, a scelerisque ligula pellentesque id. Nam auctor purus eget diam blandit, in semper urna commodo. Sed nec luctus est.
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel condimentum elit. Suspendisse euismod dolor sed condimentum lacinia. Etiam ornare metus quis ante imperdiet vestibulum. Aliquam iaculis massa id diam elementum convallis. Maecenas sodales ac tortor et tristique. Curabitur vitae commodo ipsum. Maecenas non sapien auctor, gravida lectus quis, malesuada mi. Pellentesque accumsan rutrum odio, a scelerisque ligula pellentesque id. Nam auctor purus eget diam blandit, in semper urna commodo. Sed nec luctus est.
+						%h2
+							Lorem ipsum dolor sit amet
+						-5.times do
+							%p
+								%small
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel condimentum elit. Suspendisse euismod dolor sed condimentum lacinia. Etiam ornare metus quis ante imperdiet vestibulum. Aliquam iaculis massa id diam elementum convallis. Maecenas sodales ac tortor et tristique. Curabitur vitae commodo ipsum. Maecenas non sapien auctor, gravida lectus quis, malesuada mi. Pellentesque accumsan rutrum odio, a scelerisque ligula pellentesque id. Nam auctor purus eget diam blandit, in semper urna commodo. Sed nec luctus est.
+					.col-md-2
+			.col-md-1.col-md-pull-11
+				.social-btn-group
+					.fix-social.affix{"data-spy"=>"affix", "data-offset-top"=>"350"}
+						%h6.text-center.extra-light-text-color
+							SHARE
+						.btn-group.btn-group-vertical{"aria-label" => "...", :role => "group"}
+							%a.btn.btn-default{:href => "#"} 
+								F
+							%a.btn.btn-default{:href => "#"} 
+								L
+							%a.btn.btn-default{:href => "#"} 
+								I
+				
+=partial"shared/sign_up_panel"

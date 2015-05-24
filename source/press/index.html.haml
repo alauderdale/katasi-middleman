@@ -1,0 +1,54 @@
+;;;
+"title": "press"
+;;;
+
+%section.header-section{:style=>"background:#34444B url(images/header_press.png) no-repeat scroll center top; "}
+	.container
+		.row
+			.col-md-1
+			.col-md-10
+				%h1
+					LEARN WHAT OTHERS ARE SAYING ABOUT GROOVE
+			.col-md-1
+%section
+	.container
+		.row
+			-3.times do
+				.col-md-4
+					.padded
+						%img.img-responsive.margin-bottom{:src=>"images/logo_9_news@2x.png", :width=>"110px"}
+						.padding-right
+							%p
+								%small
+									%em
+										I’m a short exerpt Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic.
+							%a.bold-font-name{:href=>"#"}
+								%small
+									read more
+
+%section.no-padding
+	.row.text-center
+		.col-lg-12
+			%h3
+				In the News
+%section.off-white
+	.container
+		.row
+			-2.times do
+				.col-md-6
+					.card.card-press
+						%img.img-responsive.margin-bottom.margin-auto{:src=>"images/logo_9_news@2x.png", :width=>"110px"}
+						%p
+							Title if The Press Release to Inform Viewers How Much Influence Groove Has
+						%hr
+						.row
+							.col-xs-6
+								%h6.extra-light-text-color
+									11 JAN 2014
+							.col-xs-6
+								%a.btn.btn-wire-primary.pull-right{:href=>"", :target=>"_blank"}
+									View Article
+									%i.md.md-launch
+=partial"shared/sign_up_panel"
+
+				

@@ -1,4 +1,5 @@
 a{
+	color:$primary-color;
 	&:hover{
 		text-decoration:none;
 	}
@@ -12,7 +13,7 @@ a{
 	font-family:$flourish-font-name;
 	font-weight:900;
 	padding:$baseline/2 $baseline*1.5;
-	font-size:.7em;
+	font-size:.8em;
 	transition-duration:.3s;
 	&.btn-primary{
 		background-color:$primary-color;
@@ -30,8 +31,19 @@ a{
 			border-color:rgba(255,255,255,1);
 		}
 	}
+	&.btn-wire-primary{
+		background:transparent;
+		border:1px solid rgba(47,168,221,.5);
+		color:$primary-color;
+		&:hover{
+			border-color:$primary-color;
+		}
+	}
 	&.btn-default{
 		color:$primary-color;
 		border-color:white;
+	}
+	&.btn-lg{
+		font-size:1.2em;
 	}
 }
