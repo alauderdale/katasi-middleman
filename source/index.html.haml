@@ -19,10 +19,12 @@
 				.padding-top
 					%a.btn.btn-primary{:href=>"#"}
 						Keep our Roads Safe
+				%a.down-link{:href=>"#ssinfo"}
+					%i.md.md-keyboard-arrow-down
 	%video{:autoplay => "autoplay", :loop => "loop"}
 		%source{:src => "/images/girl-driving-052115-HD.mp4"}
 		%img{:src=>"/images/home_bg_placeholder@2x.png"}
-%section.text-center
+%section.text-center#ssinfo
 	.container
 		.row
 			.col-md-2
@@ -32,7 +34,8 @@
 				%p
 					Every year distracted driving causes 1.6 million auto accidents, half a million injuries and takes 6000 lives. Groove will has the solution to stop it all.
 		.col-md-2
-%section.press-slider
+
+=partial"home/logo-slider"
 %section.text-center.no-padding-bottom
 	.container
 		.row
@@ -102,7 +105,7 @@
 					Get your Groove on
 				%p
 					Change is easier when you get rewards. Groove Game partners with companies that reward you for safe driving.
-				%a.btn.btn-primary{:href=>"#"}
+				%a.btn.btn-primary.fancybox{:href=>"/modals/game", :class=>"fancybox.ajax"}
 					REQUEST AN INVITE
 				%img.double-padding-top.img-responsive.margin-auto{:src=>"images/groove_app_mock_1.png"}
 

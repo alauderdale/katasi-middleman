@@ -35,6 +35,10 @@ section{
     text-align:center;
     padding-top:$baseline*2 + 98;
     background-size:cover!important;
+    .italic{
+      text-transform:none;
+      font-style:italic;
+    }
   }
   &.home-section{
     padding:$baseline*7 0;

@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
 	 //fancybox
-	$('.fancybox').fancybox();
+	$('.fancybox').fancybox({
+        padding: 0
+    });
 	
 	$('.fb-video').fancybox({
         padding: 0,
@@ -46,6 +48,31 @@ $(document).ready(function(){
         $('.main-nav').removeClass('scrolled-nav');
      }
     });
+
+
+
+   //slider
+
+
+       $('#logo-slider').lightSlider({
+        gallery:true,
+        item:1,
+        loop:true,
+        mode:'fade',
+        slideMargin:30,
+        thumbMargin:10,
+        thumbItem:5,
+        enableDrag: false,
+        keyPress:true,
+        controls:false,
+        currentPagerPosition:'middle',
+        onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#imageGallery .lslide'
+            });
+        }   
+    });  
+
 
 
 });

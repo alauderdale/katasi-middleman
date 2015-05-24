@@ -6,9 +6,9 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title 
       =data.page.title || "Katasi"
+    %link{:href => "lib/slick/slick.css", :rel => "stylesheet", :type => "text/css"}
     = stylesheet_link_tag "style"
-    %link{href: "/images/favicon.ico", rel: "shortcut icon"}
-    = javascript_include_tag"lib/jquery", "lib/bootstrap","lib/jquery.fancybox.pack.js","lib/helpers/jquery.fancybox-media.js", "scripts"
+    = javascript_include_tag"lib/jquery", "lib/bootstrap","lib/jquery.fancybox.pack.js","lib/helpers/jquery.fancybox-media.js","lib/lightslider.js", "scripts"
     %body{:class => page_classes}
       %nav.sliding-menu.slide-menu-right
         %button.close-menu.nav-toggler 

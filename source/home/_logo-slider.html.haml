@@ -1,0 +1,18 @@
+%section.press-slider
+	.container
+		.row
+			.col-lg-12
+				%ul#logo-slider
+					-7.times do
+						%li{"data-src" => "images/featured_img.png", "data-thumb" => "images/logo_msnbc.png"}
+							.row
+								.col-sm-6
+									%a.fb-video{:href=>"http://www.youtube.com/embed/L9szn1QQfas?enablejsapi=1&wmode=opaque"}
+										%img.img-responsive.margin-bottom.margin-auto.slider-featured-img{:src=>"images/video_placeholder.png"}
+								.col-sm-6
+									.padded
+										%p.lead
+											“On May 8, 2008, Dave Sueper was driving to a business meeting when he was struck and killed by a distracted teenage driver who had run a red light.”
+										%a.btn.btn-wire-primary
+											View the article
+											%i.md.md-launch

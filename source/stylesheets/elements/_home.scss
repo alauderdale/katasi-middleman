@@ -22,8 +22,72 @@ section{
 			z-index: 1;
 			position:inherit;
 		}
-	}
-	&.press-slider{
-		background-color:$off-white-bg-color;
+			.down-link{
+			margin-top:$baseline;
+			color:rgba(255,255,255,.5);
+			display:inline-block;
+			font-size:2em;
+			&:hover{
+				color:white;
+			}
+		}
 	}
 }
+
+
+//slider
+
+	section.press-slider{
+		background-color:$off-white-bg-color;
+		margin-top:$baseline*2;
+		padding:0 0;
+		p.lead{
+			color:$text-color;
+			font-style:italic;
+		}
+	  @include breakpoint(md) {
+	  	.padded{
+	  		padding:0!important;
+	  	}
+	    p.lead{
+	    	font-size:1em;
+	    }
+	  }
+	  @include breakpoint(sm) {
+	  	margin-top:0;
+	  	.btn{
+	  		width:100%;
+	  	}
+	  	p.lead{
+	    	text-align:center;
+	    }
+	  }
+	}
+
+	#logo-slider{
+		margin-left:0;
+	}
+
+	.lSSlideOuter {
+		overflow:inherit;
+	}
+
+	ul.lSPager{
+		position:relative;
+		top:-76px;
+		@include breakpoint(sm) {
+			top:-65px;
+		}
+		li{
+			opacity:.33;
+			padding-bottom:$baseline*2;
+			&.active{
+				opacity:1;
+				background:url(../images/slider_active.png) no-repeat center bottom;
+			}
+		}
+	}
+
+		.slider-featured-img{
+			box-shadow:0 2px 20px 0 rgba(0,0,0,.42);
+		}
