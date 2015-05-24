@@ -2,9 +2,10 @@
 @import url(lib/font-awesome.css);
 @import url(lib/bootstrap.css);
 @import url(lib/material-design-iconic-font.css);
+@import url(lib/lightslider.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 /* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_extends.scss */
-section.invert-section h1, section.invert-section h2, section.invert-section h3, section.invert-section h4, section.invert-section h5, section.invert-section h6, section.invert-section p, section.invert-section small, section.invert-section li {
+section.invert-section h1, section.header-section h1, section.single-header-section h1, section.invert-section h2, section.header-section h2, section.single-header-section h2, section.invert-section h3, section.header-section h3, section.single-header-section h3, section.invert-section h4, section.header-section h4, section.single-header-section h4, section.invert-section h5, section.header-section h5, section.single-header-section h5, section.invert-section h6, section.header-section h6, section.single-header-section h6, section.invert-section p, section.header-section p, section.single-header-section p, section.invert-section small, section.header-section small, section.single-header-section small, section.invert-section li, section.header-section li, section.single-header-section li {
   color: white !important; }
 
 /* line 6, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
@@ -15,8 +16,8 @@ section.invert-section h1, section.invert-section h2, section.invert-section h3,
 /* line 15, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 body {
   font: 100%;
-  font-size: 14px;
-  color: #333333;
+  font-size: 16px;
+  color: #434549;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -34,7 +35,11 @@ body {
 .main {
   background-color: white; }
 
-/* line 39, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 36, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+hr {
+  border-color: #e2e2e2; }
+
+/* line 44, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -43,21 +48,21 @@ body {
   clear: both;
   height: 0; }
 
-/* line 47, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 * html .clearfix {
   zoom: 1; }
 
 /* IE6 */
-/* line 48, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 53, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 *:first-child + html .clearfix {
   zoom: 1; }
 
 /* IE7 */
-/* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 57, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 img {
   height: auto; }
 
-/* line 58, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 63, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .bg-cover {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -65,51 +70,51 @@ img {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 68, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 73, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .base-line-height {
   line-height: 24px; }
 
-/* line 72, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 77, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .small-line-height {
   line-height: 18px; }
 
-/* line 76, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 81, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .full-width {
   width: 100%; }
 
-/* line 80, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 85, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .max-width {
   max-width: 100%; }
 
-/* line 84, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 89, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .display-block {
   display: block; }
 
-/* line 88, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 93, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 92, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 97, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .inline {
   display: inline; }
 
-/* line 97, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 102, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .border-top {
   border-top: 1px solid #666666; }
 
-/* line 100, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 105, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .border-right {
   border-right: 1px solid #666666; }
 
-/* line 103, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 108, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .border-bottom {
   border-bottom: 1px solid #666666; }
 
-/* line 106, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 111, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .border-left {
   border-left: 1px solid #666666; }
 
-/* line 112, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 117, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .divider-default {
   width: 100px;
   height: 4px;
@@ -118,22 +123,26 @@ img {
   text-align: center;
   margin: 24px auto; }
 
-/* line 123, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+/* line 126, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+.divider-sm {
+  width: 60px;
+  height: 3px;
+  background-color: #fbbb42;
+  display: inline-block;
+  text-align: center;
+  margin: 12px auto; }
+
+/* line 137, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
 .icon-circle {
   color: #bbbbbb;
   padding: 10px 10px;
-  border: 1px solid #d6d3d3;
+  border: 1px solid #e2e2e2;
   border-radius: 100px;
   font-size: 1.5em; }
   @media (max-width: 992px) {
-    /* line 123, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
+    /* line 137, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
     .icon-circle {
       margin-bottom: 12px; } }
-
-@media (max-width: 767px) {
-  /* line 135, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_base.scss */
-  .text-center-sm {
-    text-align: center; } }
 
 @font-face {
   font-family: 'socialicoregular';
@@ -299,143 +308,205 @@ img {
 
 /* line 300, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .text-color {
-  color: #333333 !important; }
+  color: #434549 !important; }
 
 /* line 304, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+.extra-light-text-color {
+  color: #bbbbbb !important; }
+
+/* line 308, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .dark-text-color {
   color: #2a2a2a; }
 
-/* line 308, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 312, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .text-success {
   color: #9aca40; }
 
-/* line 312, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 316, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .text-warning {
   color: #f0ad4e; }
 
-/* line 316, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 320, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .link-color {
   color: #4a90e2; }
 
-/* line 321, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 325, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text h5, .white-text h6, .white-text p, .white-text small, .white-text li {
   color: white !important; }
 
-/* line 328, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 332, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .micro-text {
   font-size: .7em; }
 
-/* line 337, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 341, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
-/* line 340, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 344, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
-  margin-bottom: 12px; }
+  margin-bottom: 24px; }
 
-/* line 349, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 351, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+p small {
+  display: inline-block;
+  line-height: 1.6em; }
+/* line 355, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+p.lead {
+  line-height: 1.8em; }
+
+/* line 361, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 p {
   font-size: 1em; }
 
-/* line 350, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 362, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h1 {
-  font-size: 3.5em; }
+  font-size: 2.3em; }
 
-/* line 351, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 363, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h2 {
   font-size: 1.7em; }
 
-/* line 352, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 364, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h3 {
-  font-size: 1.2em;
-  text-transform: uppercase; }
-
-/* line 353, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
-h4 {
-  font-size: 1em; }
-
-/* line 354, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
-h5 {
-  font-size: 1em;
-  letter-spacing: 2pt;
-  text-transform: uppercase; }
-
-/* line 355, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
-h6 {
-  font-size: 0.8em; }
-
-/* line 359, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
-h1 {
-  font-family: "brandon_grotesquebold";
-  text-transform: uppercase;
-  letter-spacing: 3pt; }
+  font-size: 1.2em; }
 
 /* line 365, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h4 {
+  font-size: 1.6em; }
+
+/* line 366, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h5 {
+  font-size: 1em; }
+
+/* line 367, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h6 {
+  font-size: 0.8em;
+  margin-bottom: 12px; }
+
+/* line 371, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h1 {
+  font-family: "brandon_grotesque_regularRg";
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  line-height: 1.5em; }
+
+/* line 378, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h2 {
   line-height: 1.6em; }
 
-/* line 369, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 382, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 h3 {
+  font-size: 2em;
+  line-height: 1.3em; }
+
+/* line 387, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h4 {
+  color: #434549;
+  font-family: "open_sanslight", Helvetica, Arial, sans-serif; }
+
+/* line 392, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h5 {
   font-family: "open_sansbold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3pt;
   line-height: 1.6em; }
 
-/* line 376, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
-h5 {
-  color: #888888;
+/* line 399, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+h6 {
+  font-family: "open_sansbold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: "brandon_grotesque_regularRg";
-  letter-spacing: 1px; }
+  letter-spacing: 1pt;
+  line-height: 1.3em; }
 
-/* line 384, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 408, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 p {
   color: #888888;
-  line-height: 1.8em;
-  margin-bottom: 48px; }
+  line-height: 1.8em; }
 
-/* line 391, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 414, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 blockquote {
   border-left-color: #f1d2f6; }
-  /* line 393, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+  /* line 416, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
   blockquote p {
     font-family: "brandon_grotesque_regularRg";
     font-size: 1.5em;
     margin-bottom: 12px;
     line-height: 1.2em;
     color: #2a2a2a; }
-  /* line 400, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+  /* line 423, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
   blockquote footer {
-    color: #333333; }
-    /* line 402, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+    color: #434549; }
+    /* line 425, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
     blockquote footer cite {
       color: #bbbbbb; }
 
-/* line 409, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 432, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .signature {
   font-family: "open_sanslight", Helvetica, Arial, sans-serif;
   font-size: .8em; }
 
-/* line 416, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
+/* line 439, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_typography.scss */
 .line-through {
   text-decoration: line-through; }
 
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_lists.scss */
+ul {
+  margin-left: 24px;
+  margin-bottom: 36px;
+  color: #6c6c6c; }
+  /* line 5, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_lists.scss */
+  ul.list-centered {
+    display: inline-block; }
+
 /* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+a {
+  color: #2fa8dd; }
+  /* line 3, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  a:hover {
+    text-decoration: none; }
+
+/* line 9, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
 .btn {
   border-radius: 100px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: "brandon_grotesque_regularRg";
-  font-weight: 900; }
-  /* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  font-weight: 900;
+  padding: 12px 36px;
+  font-size: .8em;
+  transition-duration: .3s; }
+  /* line 18, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-primary {
+    background-color: #2fa8dd;
+    border-color: #2fa8dd; }
+    /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+    .btn.btn-primary:hover {
+      background-color: #2a97c6;
+      border-color: #2a97c6; }
+  /* line 26, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
   .btn.btn-wire {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5); }
-    /* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white; }
+    /* line 30, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
     .btn.btn-wire:hover {
       border-color: white; }
+  /* line 34, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-wire-primary {
+    background: transparent;
+    border: 1px solid rgba(47, 168, 221, 0.5);
+    color: #2fa8dd; }
+    /* line 38, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+    .btn.btn-wire-primary:hover {
+      border-color: #2fa8dd; }
+  /* line 42, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-default {
+    color: #2fa8dd;
+    border-color: white; }
+  /* line 46, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-lg {
+    font-size: 1.2em; }
 
 /* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-auto {
@@ -667,13 +738,148 @@ blockquote {
 
 /* line 4, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
 section {
-  padding: 48px 0; }
+  padding: 72px 0; }
   /* line 6, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
   section.invert-section {
     background-color: #2fa8dd; }
   /* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
   section.off-white {
-    background-color: #fafafa; }
+    background-color: #e5e9ea; }
+  /* line 14, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.icon-grid-col-6 i {
+    position: relative;
+    left: 29px;
+    opacity: .7; }
+    @media (max-width: 992px) {
+      /* line 14, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.icon-grid-col-6 i {
+        left: 0;
+        margin-bottom: 12px; } }
+  /* line 23, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.icon-grid-col-6 .info-container {
+    padding-right: 24px; }
+    @media (max-width: 992px) {
+      /* line 23, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.icon-grid-col-6 .info-container {
+        padding-right: 0; } }
+  /* line 30, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.sign-up-banner {
+    background: #2fa8dd url(../images/sign_up_banner_baner_bg.png) center; }
+  /* line 33, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.header-section {
+    text-align: center;
+    padding-top: 146px;
+    background-size: cover !important; }
+    /* line 38, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+    section.header-section .italic {
+      text-transform: none;
+      font-style: italic; }
+  /* line 43, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.home-section {
+    padding: 168px 0;
+    padding-top: 246px; }
+    @media (max-width: 992px) {
+      /* line 43, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.home-section {
+        padding: 48px 0;
+        padding-top: 126px; } }
+  /* line 51, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+  section.single-header-section {
+    padding: 168px 0;
+    padding-top: 246px;
+    padding-bottom: 0; }
+    /* line 56, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+    section.single-header-section .title-wrapper {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 24px 0; }
+      /* line 59, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.single-header-section .title-wrapper h3 {
+        margin-bottom: 0; }
+      /* line 62, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.single-header-section .title-wrapper p {
+        margin-bottom: 0; }
+    @media (max-width: 992px) {
+      /* line 51, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_sections.scss */
+      section.single-header-section {
+        padding: 48px 0;
+        padding-top: 126px;
+        padding-bottom: 0; } }
+
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+ul.nav-pills {
+  margin: 0;
+  padding: 0; }
+  /* line 4, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+  ul.nav-pills li {
+    text-transform: uppercase;
+    font-family: "brandon_grotesquebold";
+    letter-spacing: 1pt; }
+    /* line 8, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+    ul.nav-pills li a {
+      color: #2fa8dd;
+      transition-duration: .2s; }
+      /* line 11, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+      ul.nav-pills li a:hover {
+        background: none;
+        color: #bbbbbb; }
+      /* line 15, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+      ul.nav-pills li a:focus {
+        background: none; }
+
+/* line 24, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_navs.scss */
+ul.pager li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "brandon_grotesque_regularRg";
+  font-weight: 900;
+  font-size: .8em;
+  padding: 12px 36px;
+  border-radius: 300px; }
+
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_panels_wells.scss */
+.card {
+  background: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 48px; }
+  /* line 5, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_panels_wells.scss */
+  .card.card-press {
+    margin-bottom: 24px; }
+    /* line 6, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_panels_wells.scss */
+    .card.card-press p {
+      font-family: "open_sansbold", Helvetica, Arial, sans-serif;
+      color: #434549; }
+    /* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_panels_wells.scss */
+    .card.card-press h6 {
+      margin-top: 10px; }
+    @media (max-width: 992px) {
+      /* line 15, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_panels_wells.scss */
+      .card.card-press .btn {
+        padding: 10px 12px; } }
+
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_modals.scss */
+.modal-default {
+  padding: 48px;
+  background: white;
+  border-radius: 3px; }
+
+/* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_modals.scss */
+.modal-sm {
+  min-width: 400px; }
+  @media (max-width: 992px) {
+    /* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_modals.scss */
+    .modal-sm {
+      min-width: 0 !important; } }
+
+/* line 14, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_modals.scss */
+.fancybox-close {
+  right: 11px;
+  top: 6px; }
+
+/* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_forms.scss */
+form .form-control {
+  box-shadow: none;
+  border-radius: 3px;
+  border-color: #CFCFCF; }
 
 /* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_videos.scss */
 .videoWrapper {
@@ -691,6 +897,15 @@ section {
   width: 100%;
   height: 100%; }
 
+/* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_icons.css.scss */
+i.icon-md {
+  font-size: 5em;
+  line-height: 1em; }
+/* line 6, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_icons.css.scss */
+i.icon-sm {
+  font-size: 3em;
+  line-height: 1.2em; }
+
 /* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
 .main-nav {
   transition-duration: .4s;
@@ -698,27 +913,30 @@ section {
   box-shadow: none;
   border: none;
   padding: 12px 0; }
-  /* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  .main-nav.scrolled-nav {
+    background-color: #010101; }
+  /* line 13, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .navbar-brand {
     padding-top: 0;
     padding-bottom: 0; }
-  /* line 14, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 17, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .social-nav {
     float: right; }
-  /* line 17, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 20, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .main-links {
     float: right; }
-  /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 24, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav a.navbar-brand {
     position: relative;
     top: 12px; }
-  /* line 26, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 29, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .navbar-toggle {
     border: none; }
-    /* line 28, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+    /* line 31, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
     .main-nav .navbar-toggle:hover {
       background-color: transparent; }
-  /* line 32, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 35, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav span.menu-text {
     font-family: "brandon_grotesque_regularRg";
     font-weight: 900;
@@ -726,52 +944,82 @@ section {
     font-size: 13px;
     margin-right: 10px;
     letter-spacing: 1.5px; }
-  /* line 40, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 43, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav ul.main-links {
     padding: 6px 0; }
-    /* line 42, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+    /* line 45, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
     .main-nav ul.main-links li {
       font-family: "brandon_grotesque_regularRg";
       font-weight: 900;
       text-transform: uppercase;
-      font-size: .8em;
+      font-size: .7em;
       letter-spacing: 1.5px;
       float: left; }
-      /* line 49, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+      /* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
       .main-nav ul.main-links li a {
         transition-duration: .2s;
         color: white; }
-        /* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+        /* line 55, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
         .main-nav ul.main-links li a:hover {
           color: #2fa8dd;
-          background: none; }
-  /* line 59, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+          background: transparent; }
+        /* line 59, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+        .main-nav ul.main-links li a:focus {
+          background: transparent; }
+  /* line 65, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .btn {
     padding: 9.6px 24px;
-    font-size: .8em; }
+    font-size: .7em; }
     @media (max-width: 992px) {
-      /* line 59, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+      /* line 65, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
       .main-nav .btn {
         width: 100%; } }
-  /* line 66, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 72, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .btn-twitter {
     background-color: #5EA9DD;
     border-color: #5EA9DD;
-    padding: 3px 11px; }
-  /* line 71, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+    padding: 3px 8px; }
+  /* line 77, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .btn-facebook {
     background-color: #3B5998;
     border-color: #3B5998;
-    padding: 3px 14px; }
-  /* line 77, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+    padding: 3px 13px; }
+  /* line 83, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .btn-social {
     font-family: "socialicoregular";
-    font-size: 1.5em; }
+    font-size: 1.4em;
+    color: white; }
 
 @media (max-width: 992px) {
-  /* line 86, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
+  /* line 93, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_header.scss */
   .main-nav .nav-links {
     display: none; } }
+
+/* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer ul {
+  margin-left: 0;
+  margin-bottom: 0; }
+/* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer.global-footer .logo-svg {
+  fill: #666666; }
+/* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer.global-footer h6 {
+  color: #666666; }
+/* line 15, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer.global-footer ul li a {
+  color: #bbbbbb;
+  transition-duration: .3s; }
+  /* line 18, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+  footer.global-footer ul li a:hover {
+    color: white; }
+/* line 24, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer.global-footer ul.footer-main-nav li {
+  font-size: .7em;
+  line-height: 1.9em; }
+/* line 30, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_footer.scss */
+footer.global-footer ul.social-nav-footer li {
+  font-family: "socialicoregular";
+  font-size: 2em; }
 
 /* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
 body {
@@ -780,7 +1028,7 @@ body {
 /* line 6, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
 button.nav-toggler {
   color: white;
-  font-size: 2em;
+  font-size: 1.9em;
   position: relative;
   top: 8px;
   background: none;
@@ -825,84 +1073,383 @@ nav.sliding-menu {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   padding: 20px 20px; }
-  /* line 58, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 48, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  nav.sliding-menu ul {
+    margin: 0;
+    padding: 0; }
+  /* line 62, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .nav-toggler {
     float: right; }
-  /* line 61, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 65, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .navbar-form {
     border: none;
     box-shadow: none;
     margin: 0 !important;
     padding: 0 !important; }
-    /* line 66, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+    /* line 70, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
     nav.sliding-menu .navbar-form .form-group {
       margin: 0 !important;
       padding: 0 !important;
       margin-left: 10px !important; }
-      /* line 70, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+      /* line 74, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
       nav.sliding-menu .navbar-form .form-group:nth-child(1) {
         margin-bottom: 24px !important;
         margin-top: -21px !important; }
-      /* line 74, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+      /* line 78, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
       nav.sliding-menu .navbar-form .form-group:nth-child(2) {
         float: left; }
-  /* line 79, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 83, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .btn {
     padding: 9.6px 24px;
-    font-size: .8em;
+    font-size: .7em;
     margin-right: 5px; }
-  /* line 84, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 88, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .btn-join-us {
     padding: 9.6px 48px; }
-  /* line 87, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 91, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .btn-twitter {
     background-color: #5EA9DD;
     border-color: #5EA9DD;
-    padding: 3px 11px; }
-  /* line 92, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+    padding: 3px 8px; }
+  /* line 96, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .btn-facebook {
     background-color: #3B5998;
     border-color: #3B5998;
-    padding: 3px 14px; }
-  /* line 98, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+    padding: 3px 13px; }
+  /* line 102, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu .btn-social {
     font-family: "socialicoregular";
-    font-size: 1.5em; }
-  /* line 102, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+    font-size: 1.4em;
+    color: white; }
+  /* line 107, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   nav.sliding-menu ul.main-links {
     margin-top: 24px; }
-    /* line 104, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+    /* line 109, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
     nav.sliding-menu ul.main-links li {
       font-family: "brandon_grotesque_regularRg";
       font-weight: 900;
       text-transform: uppercase;
       font-size: .8em;
       letter-spacing: 1.5px; }
-      /* line 110, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+      /* line 115, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
       nav.sliding-menu ul.main-links li a {
         transition-duration: 0.3s;
         color: rgba(255, 255, 255, 0.5); }
-        /* line 113, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+        /* line 118, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
         nav.sliding-menu ul.main-links li a:hover {
           background: none;
           color: white; }
+        /* line 122, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+        nav.sliding-menu ul.main-links li a:focus {
+          background: transparent; }
 
 /* slide menu left and right, push menu left and right */
-/* line 125, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+/* line 133, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
 nav.slide-menu-right {
   top: 0;
   width: 260px;
   height: 100%; }
 
-/* line 132, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+/* line 140, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
 nav.slide-menu-right {
   right: -260px; }
 
-/* line 136, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+/* line 144, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
 body.smr-open nav.slide-menu-right {
   right: 0; }
 
 @media (min-width: 992px) {
-  /* line 144, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
+  /* line 152, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_sliding_menu.scss */
   .mask, .sliding-menu {
     display: none; } }
+/* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+section.home-video {
+  background: #010101 url("/images/home_bg_placeholder@2x.png") no-repeat scroll center top;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  color: white; }
+  /* line 11, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+  section.home-video video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0; }
+  /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+  section.home-video .container {
+    z-index: 1;
+    position: inherit; }
+  /* line 25, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+  section.home-video .down-link {
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    font-size: 2em; }
+    /* line 30, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    section.home-video .down-link:hover {
+      color: white; }
+
+/* line 40, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+section.press-slider {
+  background-color: #e5e9ea;
+  margin-top: 48px;
+  padding: 0 0; }
+  /* line 44, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+  section.press-slider p.lead {
+    color: #434549;
+    font-style: italic; }
+  @media (max-width: 992px) {
+    /* line 49, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    section.press-slider .padded {
+      padding: 0 !important; }
+    /* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    section.press-slider p.lead {
+      font-size: 1em; } }
+  @media (max-width: 767px) {
+    /* line 40, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    section.press-slider {
+      margin-top: 0; }
+      /* line 58, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+      section.press-slider .btn {
+        width: 100%; }
+      /* line 61, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+      section.press-slider p.lead {
+        text-align: center; } }
+
+/* line 67, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+#logo-slider {
+  margin-left: 0; }
+
+/* line 71, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+.lSSlideOuter {
+  overflow: inherit; }
+
+/* line 75, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+ul.lSPager {
+  position: relative;
+  top: -76px; }
+  @media (max-width: 767px) {
+    /* line 75, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    ul.lSPager {
+      top: -65px; } }
+  /* line 81, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+  ul.lSPager li {
+    opacity: .33;
+    padding-bottom: 48px; }
+    /* line 84, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+    ul.lSPager li.active {
+      opacity: 1;
+      background: url(../images/slider_active.png) no-repeat 54px bottom; }
+
+/* line 91, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_home.scss */
+.slider-featured-img {
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.42); }
+
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_products.scss */
+.groove-car {
+  position: relative;
+  left: 70px;
+  bottom: 90px; }
+  @media (max-width: 992px) {
+    /* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_products.scss */
+    .groove-car {
+      left: 0;
+      bottom: 0; } }
+
+/* line 1, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+a.team-member-thumb {
+  margin-bottom: 24px;
+  display: block; }
+  /* line 4, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+  a.team-member-thumb p {
+    margin-bottom: 0; }
+  /* line 7, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+  a.team-member-thumb ul {
+    font-size: .8em;
+    margin-left: 14px; }
+    /* line 10, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    a.team-member-thumb ul li {
+      color: #434549; }
+  /* line 14, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+  a.team-member-thumb img {
+    transition-duration: .2s;
+    opacity: 0.9;
+    max-width: 300px; }
+  /* line 19, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+  a.team-member-thumb:hover, a.team-member-thumb:focus {
+    text-decoration: none; }
+    /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    a.team-member-thumb:hover img, a.team-member-thumb:focus img {
+      opacity: 1; }
+    /* line 24, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    a.team-member-thumb:hover li, a.team-member-thumb:hover p, a.team-member-thumb:hover img, a.team-member-thumb:focus li, a.team-member-thumb:focus p, a.team-member-thumb:focus img {
+      text-decoration: none; }
+
+/* line 33, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+#jobs-accordion {
+  margin-bottom: 72px; }
+  /* line 35, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+  #jobs-accordion .panel {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0;
+    margin: 0; }
+    /* line 43, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    #jobs-accordion .panel a:hover, #jobs-accordion .panel a:focus {
+      text-decoration: none; }
+    /* line 47, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    #jobs-accordion .panel .panel-heading {
+      background: transparent;
+      padding: 0; }
+      /* line 50, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+      #jobs-accordion .panel .panel-heading a {
+        display: block;
+        padding: 24px 0;
+        padding-top: 0; }
+        /* line 54, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a:focus {
+          border: none;
+          outline: none; }
+        /* line 58, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a hr {
+          margin: 0;
+          margin-bottom: 24px;
+          visibility: hidden;
+          transition-duration: .3s; }
+        /* line 64, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a h4 {
+          margin-bottom: 6px; }
+        /* line 67, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a p {
+          margin-bottom: 0; }
+        /* line 70, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a .close-icon {
+          font-size: 3em;
+          font-family: "open_sanslight", Helvetica, Arial, sans-serif;
+          margin-bottom: -30px;
+          position: relative;
+          top: -50px;
+          float: right;
+          display: inline-table;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          transition-duration: .3s;
+          color: #2fa8dd; }
+        /* line 83, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a.collapsed .close-icon {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg); }
+        /* line 86, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+        #jobs-accordion .panel .panel-heading a.collapsed hr {
+          visibility: visible; }
+    /* line 94, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    #jobs-accordion .panel .in .panel-body {
+      background: #e5e9ea; }
+    /* line 98, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+    #jobs-accordion .panel .panel-body {
+      padding: 48px 0;
+      padding-top: 159px;
+      margin-top: -111px;
+      font-size: .9em;
+      border: none;
+      transition-duration: .3s; }
+      /* line 105, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+      #jobs-accordion .panel .panel-body .btn {
+        font-size: 1em; }
+        @media (max-width: 992px) {
+          /* line 105, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_company.scss */
+          #jobs-accordion .panel .panel-body .btn {
+            position: relative;
+            top: -24px; } }
+
+/* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+.social-btn-group {
+  position: relative;
+  right: 10px; }
+  @media (max-width: 992px) {
+    /* line 2, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+    .social-btn-group {
+      right: 0; } }
+  /* line 8, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+  .social-btn-group .btn {
+    border: 1px solid #2fa8dd;
+    font-family: "socialicoregular";
+    font-size: 1.5em;
+    padding: 12px 16px; }
+    /* line 13, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+    .social-btn-group .btn:first-of-type {
+      border-top-right-radius: 100px !important;
+      border-top-left-radius: 100px !important; }
+    /* line 17, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+    .social-btn-group .btn:last-of-type {
+      border-bottom-right-radius: 100px !important;
+      border-bottom-left-radius: 100px !important; }
+    /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+    .social-btn-group .btn:hover {
+      background: #2fa8dd;
+      color: white; }
+
+/* line 28, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+.fix-social {
+  width: 55px; }
+  /* line 30, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+  .fix-social.affix {
+    top: 90px; }
+  @media (max-width: 992px) {
+    /* line 28, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+    .fix-social {
+      position: relative; }
+      /* line 35, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/elements/_blog.scss */
+      .fix-social.affix {
+        top: 0px; } }
+
+@media (max-width: 992px) {
+  /* line 5, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .text-center-md {
+    text-align: center; } }
+
+@media (max-width: 992px) {
+  /* line 13, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .no-padding-md {
+    padding: 0 !important; } }
+
+@media (max-width: 992px) {
+  /* line 21, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .btn-block-md {
+    display: block;
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  /* line 28, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .no-padding-right-md {
+    padding-right: 0 !important; } }
+
+@media (max-width: 767px) {
+  /* line 40, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .text-center-sm {
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  /* line 46, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+  .no-margin-bottom-sm {
+    margin-bottom: 0; } }
+
+/* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+.margin-bottom-sm {
+  margin-bottom: 0; }
+  @media (max-width: 767px) {
+    /* line 52, /Users/alauderdale/Dropbox/clients/Katasi/SITES/katasi_marketing_midleman/source/stylesheets/partials/_responsive_helpers.scss */
+    .margin-bottom-sm {
+      margin-bottom: 24px; } }
